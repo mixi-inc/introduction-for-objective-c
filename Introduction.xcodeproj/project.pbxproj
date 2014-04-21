@@ -21,6 +21,9 @@
 		5439D25919051C21002C84BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23B19051C21002C84BA /* UIKit.framework */; };
 		5439D26119051C21002C84BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5439D25F19051C21002C84BA /* InfoPlist.strings */; };
 		5439D26319051C21002C84BA /* IntroductionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439D26219051C21002C84BA /* IntroductionTests.m */; };
+		5439D27719052C68002C84BA /* ClassAndMethodTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439D27619052C68002C84BA /* ClassAndMethodTest.m */; };
+		5439D27A19052E66002C84BA /* UltraObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439D27919052E65002C84BA /* UltraObject.m */; };
+		5439D27B19052E66002C84BA /* UltraObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439D27919052E65002C84BA /* UltraObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		5439D25E19051C21002C84BA /* IntroductionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroductionTests-Info.plist"; sourceTree = "<group>"; };
 		5439D26019051C21002C84BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5439D26219051C21002C84BA /* IntroductionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionTests.m; sourceTree = "<group>"; };
+		5439D27619052C68002C84BA /* ClassAndMethodTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassAndMethodTest.m; sourceTree = "<group>"; };
+		5439D27819052E65002C84BA /* UltraObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UltraObject.h; sourceTree = "<group>"; };
+		5439D27919052E65002C84BA /* UltraObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UltraObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,8 @@
 			children = (
 				5439D24619051C21002C84BA /* INTAppDelegate.h */,
 				5439D24719051C21002C84BA /* INTAppDelegate.m */,
+				5439D27819052E65002C84BA /* UltraObject.h */,
+				5439D27919052E65002C84BA /* UltraObject.m */,
 				5439D24919051C21002C84BA /* Main.storyboard */,
 				5439D24C19051C21002C84BA /* INTViewController.h */,
 				5439D24D19051C21002C84BA /* INTViewController.m */,
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5439D26219051C21002C84BA /* IntroductionTests.m */,
+				5439D27619052C68002C84BA /* ClassAndMethodTest.m */,
 				5439D25D19051C21002C84BA /* Supporting Files */,
 			);
 			path = IntroductionTests;
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5439D27A19052E66002C84BA /* UltraObject.m in Sources */,
 				5439D24E19051C21002C84BA /* INTViewController.m in Sources */,
 				5439D24819051C21002C84BA /* INTAppDelegate.m in Sources */,
 				5439D24419051C21002C84BA /* main.m in Sources */,
@@ -261,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439D26319051C21002C84BA /* IntroductionTests.m in Sources */,
+				5439D27719052C68002C84BA /* ClassAndMethodTest.m in Sources */,
+				5439D27B19052E66002C84BA /* UltraObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
