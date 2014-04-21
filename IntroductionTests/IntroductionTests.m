@@ -29,11 +29,11 @@
 #pragma mark - NSString
 - (void)testCreateNSString
 {
-    NSString *str;
+    NSString *str = @"Hello, World!!";
     XCTAssertTrue([str isEqualToString:@"Hello, World!!"], @"Objective-Cの文字列は@とダブルクォーテーションでくくって作ります。");
     XCTAssertEqual(str.length, 14, @"長さの取得はlengthメソッド");
 
-    NSString *formatted = [NSString stringWithFormat:@"int:%lf, float:%x, obj:%@", 10, 30.0, str];
+    NSString *formatted = [NSString stringWithFormat:@"int:%d, float:%lf, obj:%@", 10, 30.0, str];
     XCTAssertTrue([formatted isEqualToString:@"int:10, float:30.000000, obj:Hello, World!!"], @"フォーマット指定子も使えます。Objective-Cのオブジェクトは％@で出力できます");
 
 }
@@ -41,6 +41,7 @@
 - (void)testAppendNSMutableString
 {
     NSMutableString *mutableString = [NSMutableString stringWithString:@"Hello, "];
+    [mutableString appendString:@"World"];
     XCTAssertTrue([mutableString isEqualToString:@"Hello, World"], @"文字列の結合にはappendStringを使う");
 }
 
@@ -49,7 +50,7 @@
 - (void)testNSArrayBasics
 {
     NSString *str1 = @"1", *str2 = @"2", *str3 = @"3";
-    NSArray *array;
+    NSArray *array = @[str1, str2, str3];
 
     XCTAssertEqualObjects(array[0], str1, @"配列は@[..]で作って、アクセスはarray[0]のようにします。");
     XCTAssertEqual(array.count, 3, @"配列のサイズへのアクセスは.countを利用");
@@ -61,10 +62,13 @@
     NSMutableArray *mutable = [NSMutableArray array];
     XCTAssertEqual(mutable.count, 0, @"最初は0個");
 
+    [mutable addObject:str1];
     XCTAssertEqualObjects(mutable[0], str1, @"オブジェクトを追加するにはaddObjectを利用する");
 
+    [mutable addObjectsFromArray:@[str2, str3]];
     XCTAssertEqual(mutable.count, 3, @"まとめて追加するときはaddObjectsFromArrayを利用");
 
+    [mutable removeObject:str2]; // [mutable removeObjectAtIndex:1]でも可能
     XCTAssertEqualObjects(mutable[1], str3, @"削除するときはremoveObject...なメソッドを利用");
 
 }
@@ -72,7 +76,7 @@
 #pragma mark - NSDictionary
 - (void)testNSDictionaryBasics
 {
-    NSDictionary *dict;
+    NSDictionary *dict = @{@"key": @"value"};
     XCTAssertEqualObjects(dict[@"key"], @"value", @"辞書型のNSDictionaryは @{key:vlaue} のように初期化し、dict[key]のようにアクセスします");
     XCTAssertNil(dict[@"foobar"], @"登録していない場合はnilが返ります。");
     XCTAssertTrue([dict.allKeys[0] isEqualToString:@"key"], @"全てのキーはallKeysで取れます。NSArrayが帰ってきます。");
@@ -87,11 +91,14 @@
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
     NSString *str = @"I love ruby";
 
+    mutableDict[@"key"] = str;
     XCTAssertEqualObjects(mutableDict[@"key"], str, @"dict[key] = valueで登録できます。");
 
     NSString *str2 = @"I love Objective-C";
+    mutableDict[@"key"] = str2;
     XCTAssertEqualObjects(mutableDict[@"key"], str2, @"同じキーで代入すると上書きされます。");
 
+    [mutableDict removeObjectForKey:@"key"];
     XCTAssertNil(mutableDict[@"key"], @"removeObjectForKeyで削除されます。");
 
 }
@@ -106,7 +113,7 @@
 - (void)testIfAndBOOL
 {
     //真偽値ではBOOL型を使う事が一般的です。
-    BOOL a;
+    BOOL a = YES;
     if (a == YES) { // 比較は '==' を使います。オブジェクトの比較には isEqual: を使います。
         // ここに来て欲しい
     } else {
@@ -130,7 +137,7 @@
 {
     NSInteger count1 = 0;
     for (; count1 < 10;) {
-        // ここにコードを書く
+        count1++;
     }
 
     XCTAssertEqual(count1, 10, @"Cのfor文をかける");
@@ -142,7 +149,10 @@
     }
 
 
-    NSMutableArray *mutableArray;
+    NSMutableArray *mutableArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < 10; ++i) {
+        [mutableArray addObject:@(i)];
+    }
 
 
     // forを使ってmutableArrayに0から9のNSNumberを追加してみてください

@@ -19,5 +19,23 @@
     return self;
 }
 
+- (instancetype)initWithName:(NSString *)str ultra:(NSInteger)ultra {
+    self = [self init];
+    if (self) {
+
+        _name = str;
+        _ultra = ultra;
+
+    }
+    return self;
+}
+
+- (NSString *)ultraString {
+    return [NSString stringWithFormat:@"Ultra-%@-%d", self.name, self.ultra];
+}
+
+- (void)doubleUltra {
+    self.ultra *= 2;
+}
 
 @end
