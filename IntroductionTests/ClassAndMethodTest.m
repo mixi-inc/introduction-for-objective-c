@@ -38,7 +38,11 @@
 - (void)testUltraString
 {
     UltraObject *ultraObj = [[UltraObject alloc] initWithName:@"seven" ultra:7];
-    XCTAssertTrue([[ultraObj ultraString] isEqualToString:@"Ultra-seven-7"], @"");
+    XCTAssertTrue([[ultraObj ultraString] isEqualToString:@"Ultra-seven-7"], @"Ultra-(name)-(ultra)となるようにする。");
+
+    UltraObject *ultraEight = [[UltraObject alloc] initWithName:@"eight" ultra:8];
+    XCTAssertTrue([[ultraEight ultraString] isEqualToString:@"Ultra-eight-8"], @"");
+
 }
 
 - (void)testDoubleUltra
@@ -47,6 +51,8 @@
     XCTAssertEqual(ultraObj.ultra, 7, @"");
     [ultraObj doubleUltra];
     XCTAssertEqual(ultraObj.ultra, 14, @"");
+    [ultraObj doubleUltra];
+    XCTAssertEqual(ultraObj.ultra, 28, @"");
 
 }
 
