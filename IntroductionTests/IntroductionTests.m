@@ -73,7 +73,7 @@
 - (void)testNSDictionaryBasics
 {
     NSDictionary *dict;
-    XCTAssertEqualObjects(dict[@"key"], @"value", @"辞書型のNSDictionaryは @{key:vlaue} のように初期化し、dict[key]のようにアクセスします");
+    XCTAssertEqualObjects(dict[@"key"], @"value", @"辞書型のNSDictionaryは @{key:value} のように初期化し、dict[key]のようにアクセスします");
     XCTAssertNil(dict[@"foobar"], @"登録していない場合はnilが返ります。");
     XCTAssertTrue([dict.allKeys[0] isEqualToString:@"key"], @"全てのキーはallKeysで取れます。NSArrayが帰ってきます。");
     XCTAssertTrue([dict.allValues[0] isEqualToString:@"value"], @"全ての値はallValuesで取れます。NSArrayが帰ってきます。");
