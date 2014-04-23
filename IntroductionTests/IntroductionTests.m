@@ -172,7 +172,7 @@
 - (void)testNSNumber
 {
     /*
-     数を表すクラスにNSNumberがあります。プリミティブに対するラップなので仕様頻度は少ないです。
+     数を表すクラスにNSNumberがあります。プリミティブに対するラップなので使用頻度は少ないです。
      */
     NSNumber *num = @10;
     XCTAssertEqual(num.integerValue, 10, @"");
