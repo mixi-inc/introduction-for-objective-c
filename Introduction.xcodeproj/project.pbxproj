@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		542072D81A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 542072D71A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m */; };
+		542072DB1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */; };
+		542072DC1A5BF4FD00E5C8F8 /* UltraObjectAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */; };
 		5439D23819051C21002C84BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23719051C21002C84BA /* Foundation.framework */; };
 		5439D23A19051C21002C84BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23919051C21002C84BA /* CoreGraphics.framework */; };
 		5439D23C19051C21002C84BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23B19051C21002C84BA /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		542072D71A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionTestsAnswer.m; sourceTree = "<group>"; };
+		542072D91A5BF4CC00E5C8F8 /* UltraObjectAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UltraObjectAnswer.h; sourceTree = "<group>"; };
+		542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UltraObjectAnswer.m; sourceTree = "<group>"; };
 		5439D23419051C21002C84BA /* Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Introduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439D23719051C21002C84BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5439D23919051C21002C84BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +127,8 @@
 				5439D24619051C21002C84BA /* INTAppDelegate.h */,
 				5439D24719051C21002C84BA /* INTAppDelegate.m */,
 				5439D27819052E65002C84BA /* UltraObject.h */,
+				542072D91A5BF4CC00E5C8F8 /* UltraObjectAnswer.h */,
+				542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */,
 				5439D27919052E65002C84BA /* UltraObject.m */,
 				5439D24919051C21002C84BA /* Main.storyboard */,
 				5439D24C19051C21002C84BA /* INTViewController.h */,
@@ -266,6 +272,7 @@
 				5439D24E19051C21002C84BA /* INTViewController.m in Sources */,
 				5439D24819051C21002C84BA /* INTAppDelegate.m in Sources */,
 				5439D24419051C21002C84BA /* main.m in Sources */,
+				542072DB1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 				542072D81A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m in Sources */,
 				5439D27719052C68002C84BA /* ClassAndMethodTest.m in Sources */,
 				5439D27B19052E66002C84BA /* UltraObject.m in Sources */,
+				542072DC1A5BF4FD00E5C8F8 /* UltraObjectAnswer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
