@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542072D81A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 542072D71A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m */; };
 		5439D23819051C21002C84BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23719051C21002C84BA /* Foundation.framework */; };
 		5439D23A19051C21002C84BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23919051C21002C84BA /* CoreGraphics.framework */; };
 		5439D23C19051C21002C84BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439D23B19051C21002C84BA /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		542072D71A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionTestsAnswer.m; sourceTree = "<group>"; };
 		5439D23419051C21002C84BA /* Introduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Introduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5439D23719051C21002C84BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5439D23919051C21002C84BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				5439D26219051C21002C84BA /* IntroductionTests.m */,
+				542072D71A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m */,
 				5439D27619052C68002C84BA /* ClassAndMethodTest.m */,
 				5439D25D19051C21002C84BA /* Supporting Files */,
 			);
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5439D26319051C21002C84BA /* IntroductionTests.m in Sources */,
+				542072D81A5BEBB500E5C8F8 /* IntroductionTestsAnswer.m in Sources */,
 				5439D27719052C68002C84BA /* ClassAndMethodTest.m in Sources */,
 				5439D27B19052E66002C84BA /* UltraObject.m in Sources */,
 			);
@@ -469,6 +473,7 @@
 				5439D26819051C21002C84BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5439D26919051C21002C84BA /* Build configuration list for PBXNativeTarget "IntroductionTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +482,7 @@
 				5439D26B19051C21002C84BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
