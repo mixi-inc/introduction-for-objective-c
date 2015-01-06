@@ -30,6 +30,9 @@
 
 - (void)testInitialize
 {
+    // 問題
+    // UltraObject.m にはメソッド initWithName:ultra: が実装されていないので実装してください
+    // この時、引数として渡されたnameとultraがそれぞれプロパティnameとultraにセットされるようにして下さい
     UltraObject *ultraObj = [[UltraObject alloc] initWithName:@"seven" ultra:7];
     XCTAssertTrue([ultraObj.name isEqualToString:@"seven"], @"");
     XCTAssertEqual(ultraObj.ultra, 7, @"");
@@ -38,7 +41,12 @@
 - (void)testUltraString
 {
     UltraObject *ultraObj = [[UltraObject alloc] initWithName:@"seven" ultra:7];
-    XCTAssertTrue([[ultraObj ultraString] isEqualToString:@"Ultra-seven-7"], @"Ultra-(name)-(ultra)となるようにする。");
+
+    // 問題
+    // UltraObject.m にはメソッド ultraString が実装されていないので実装して下さい
+    // ultraStringはそのインスタンスのプロパティnameとultraを用いて
+    // Ultra-name-ultra というNSStringを返すメソッドです
+    XCTAssertTrue([[ultraObj ultraString] isEqualToString:@"Ultra-seven-7"], @"ヒント : [NSString stringWithFormat:...] を使う");
 
     UltraObject *ultraEight = [[UltraObject alloc] initWithName:@"eight" ultra:8];
     XCTAssertTrue([[ultraEight ultraString] isEqualToString:@"Ultra-eight-8"], @"");
@@ -48,6 +56,10 @@
 - (void)testDoubleUltra
 {
     UltraObject *ultraObj = [[UltraObject alloc] initWithName:@"seven" ultra:7];
+
+    // 問題
+    // UltraObject.m にはメソッド doubleUltra が実装されていないので実装して下さい
+    // doubleUltraはインスタンスのプロパティultra を2倍にするメソッドです
     XCTAssertEqual(ultraObj.ultra, 7, @"");
     [ultraObj doubleUltra];
     XCTAssertEqual(ultraObj.ultra, 14, @"");
