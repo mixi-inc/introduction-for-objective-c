@@ -124,17 +124,17 @@
 		5439D23D19051C21002C84BA /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				5439D24F19051C21002C84BA /* Images.xcassets */,
 				5439D24619051C21002C84BA /* INTAppDelegate.h */,
 				5439D24719051C21002C84BA /* INTAppDelegate.m */,
-				5439D27819052E65002C84BA /* UltraObject.h */,
-				542072D91A5BF4CC00E5C8F8 /* UltraObjectAnswer.h */,
-				542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */,
-				5439D27919052E65002C84BA /* UltraObject.m */,
-				5439D24919051C21002C84BA /* Main.storyboard */,
 				5439D24C19051C21002C84BA /* INTViewController.h */,
 				5439D24D19051C21002C84BA /* INTViewController.m */,
-				5439D24F19051C21002C84BA /* Images.xcassets */,
+				5439D24919051C21002C84BA /* Main.storyboard */,
 				5439D23E19051C21002C84BA /* Supporting Files */,
+				5439D27819052E65002C84BA /* UltraObject.h */,
+				5439D27919052E65002C84BA /* UltraObject.m */,
+				542072D91A5BF4CC00E5C8F8 /* UltraObjectAnswer.h */,
+				542072DA1A5BF4CC00E5C8F8 /* UltraObjectAnswer.m */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";

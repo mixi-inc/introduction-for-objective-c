@@ -154,7 +154,8 @@
     // 以下のfor文を書き換えてcount1が10回インクリメントするようにしてください
     NSInteger count1 = 0;
     for (; count1 < 10;) {
-        // ここにコードを書く
+        // break;の行を削除して、ここにコードを書く
+        break;
     }
 
     XCTAssertEqual(count1, 10, @"Cのfor文をかける");
